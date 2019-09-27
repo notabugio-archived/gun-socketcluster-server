@@ -1,11 +1,11 @@
 {
-  "name": "@notabug/socket-cluster",
-  "version": "1.0.0",
-  "description": "Socket Cluster for notabug.io",
+  "name": "@notabug/gun-socketcluster-server",
+  "version": "0.0.1",
+  "description": "Socket Cluster for gunDB",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
   "module": "build/module/index.js",
-  "repository": "https://github.com/go1dfish/@notabug/socket-cluster",
+  "repository": "https://github.com/notabugio/gun-socketcluster-server",
   "license": "MIT",
   "keywords": [],
   "scripts": {
@@ -13,6 +13,7 @@
     "build": "run-s clean && run-p build:*",
     "build:main": "tsc -p tsconfig.json",
     "build:module": "tsc -p tsconfig.module.json",
+    "start": "node -r dotenv/config build/main/server.js",
     "fix": "run-s fix:*",
     "fix:prettier": "prettier \"src/**/*.ts\" --write",
     "fix:tslint": "tslint --fix --project .",
@@ -51,16 +52,20 @@
     "node": ">=8.9"
   },
   "dependencies": {
-    "sha.js": "^2.4.11",
-    "express": "4.16.4",
+    "@notabug/gun-sear": "^0.0.13",
+    "@notabug/gun-socketcluster-worker": "^0.0.1",
+    "@types/express": "^4.17.1",
+    "@types/gun": "^0.9.1",
+    "@types/morgan": "^1.7.37",
+    "@types/sc-framework-health-check": "^2.0.0",
+    "@types/serve-static": "^1.13.3",
+    "@types/socketcluster": "^14.0.2",
+    "dotenv": "^8.1.0",
     "minimist": "1.2.0",
-    "morgan": "^1.9.1",
-    "sc-framework-health-check": "^2.0.0",
     "sc-hot-reboot": "^1.0.0",
     "scc-broker-client": "^6.1.0",
     "serve-static": "1.13.2",
-    "socketcluster": "^14.4.1",
-    "socketcluster-client": "^14.3.1"
+    "socketcluster": "^14.4.1"
   },
   "devDependencies": {
     "@bitjson/npm-scripts-info": "^1.0.0",
