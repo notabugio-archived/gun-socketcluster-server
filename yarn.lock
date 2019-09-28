@@ -344,10 +344,10 @@
     text-encoding "^0.7.0"
     window-or-global "^1.0.1"
 
-"@notabug/gun-socketcluster-worker@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@notabug/gun-socketcluster-worker/-/gun-socketcluster-worker-0.0.1.tgz#61e26ae1e9be0b6de2a05e8b922ecdec939a19b8"
-  integrity sha512-jifiwrF4FfLTSJPQYk6//LFefrSRbGBz7mihI52fg1/CmtAdXnDeMrIfVjbaAttp3MzMs6i3Aj3BTfKTK/2pIA==
+"@notabug/gun-socketcluster-worker@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@notabug/gun-socketcluster-worker/-/gun-socketcluster-worker-0.0.3.tgz#263cf930d548e07d72e833c831157ccc92ec57ba"
+  integrity sha512-LbQZpIugqEV+PywbDz8PW370BaPfBNC1XGpFkicUiCa+lIt52TeQo/U06MqR0jNJZKYKGxtl6JgTslLCyDwYTQ==
   dependencies:
     "@notabug/gun-sear" "^0.0.14"
     express "^4.17.1"

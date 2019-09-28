@@ -53,7 +53,7 @@
   },
   "dependencies": {
     "@notabug/gun-sear": "^0.0.13",
-    "@notabug/gun-socketcluster-worker": "^0.0.1",
+    "@notabug/gun-socketcluster-worker": "^0.0.3",
     "@types/express": "^4.17.1",
     "@types/gun": "^0.9.1",
     "@types/morgan": "^1.7.37",
@@ -88,8 +88,12 @@
   },
   "ava": {
     "failFast": true,
-    "files": ["build/main/**/*.spec.js"],
-    "sources": ["build/main/**/*.js"]
+    "files": [
+      "build/main/**/*.spec.js"
+    ],
+    "sources": [
+      "build/main/**/*.js"
+    ]
   },
   "config": {
     "commitizen": {
@@ -101,6 +105,8 @@
   },
   "nyc": {
     "extends": "@istanbuljs/nyc-config-typescript",
-    "exclude": ["**/*.spec.js"]
+    "exclude": [
+      "**/*.spec.js"
+    ]
   }
 }
